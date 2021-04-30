@@ -2,7 +2,7 @@ import math
 
 def main():
     n = int(input())
-    output=0
+    o=0
     for i in range(2, math.floor(n/2+1)):
         f = 1
         for j in range(2, math.floor(i/2+1)):
@@ -12,10 +12,10 @@ def main():
             if((n-i)%j==0):
                 f=0
         if(f==1):
-            output=1
+            o=1
             break
 
-    if(output==1):
+    if(o==1):
         print("true")
     else:
         print("false")
